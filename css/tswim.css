@@ -11,3 +11,40 @@
     font-size: 3.5rem;
   }
 }
+
+/* Editable value styling */
+.editable-value {
+  cursor: pointer;
+  padding: 2px 4px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.editable-value:hover {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #007bff;
+}
+
+.edit-icon {
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: #6c757d;
+}
+
+.edit-icon:hover {
+  color: #007bff;
+}
+
+.edit-container {
+  margin-left: 5px;
+}
+
+.confirm-icon, .cancel-icon {
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.2em;
+}
+
+.pool-length-container {
+  white-space: nowrap;
+}

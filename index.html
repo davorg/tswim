@@ -52,7 +52,19 @@
         <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">How far have you swum?</h1>
-            <p class="col-md-8 fs-4 change">Pool length: <span id="pool_len">16</span></p>
+            <p class="col-md-8 fs-4">
+              <span class="pool-length-container">
+                Pool length: 
+                <span id="pool_len_display" class="editable-value">16</span>
+                <i class="fas fa-pencil-alt edit-icon" id="pool_len_edit_icon"></i>
+                <span id="pool_len_edit_container" class="edit-container" style="display: none;">
+                  <input type="number" id="pool_len_input" class="form-control d-inline-block" style="width: 80px;">
+                  <i class="fas fa-check text-success confirm-icon" id="pool_len_confirm"></i>
+                  <i class="fas fa-times text-danger cancel-icon" id="pool_len_cancel"></i>
+                </span>
+                <span id="pool_len" style="display: none;">16</span>
+              </span>
+            </p>
             <p class="col-md-8 fs-4 change">Lengths per set: <span id="lengths">4</span></p>
             <p>
               <label for="colour" class="form-label">Colour:</label>
