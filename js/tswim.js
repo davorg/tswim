@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Swimming calculator loaded');
-  
+ 
   // Get references to key elements
   const colourSelect = document.getElementById('colour');
   const totalElement = document.getElementById('total');
@@ -69,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (colour) {
       const total = poolLen * lengths * colour;
       totalElement.textContent = total + 'm';
-      console.log('Distance calculated: ' + total + 'm');
     } else {
       totalElement.textContent = '';
     }
